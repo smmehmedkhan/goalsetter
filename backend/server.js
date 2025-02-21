@@ -3,7 +3,8 @@ const express = require('express');
 const colors = require('colors');
 const dotenv = require('dotenv').config();
 // Required Internal files
-const goalRoutes = require('./routes/goalRoutes.js');
+const goalRoutes = require('./routes/goals.route.js');
+const userRoutes = require('./routes/users.route.js');
 const { errorHandler } = require('./middlewares/errorHandler.js');
 const connectToDb = require('./config/db.js');
 
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Routes paths
 app.use('/api/goals', goalRoutes);
+app.use('/api/users', userRoutes);
 
 // Error handler
 app.use(errorHandler);
