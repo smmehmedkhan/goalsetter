@@ -1,24 +1,26 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const userSchema = mongoose.Schema(
-  {
-    name: {
-      type: String,
-      required: [true, 'Please add a name'],
-    },
-    email: {
-      type: String,
-      required: [true, 'Please add an email'],
-      unique: true,
-    },
-    password: {
-      type: String,
-      required: [true, 'Please add a name'],
-    },
-  },
-  {
-    timestamp: true,
-  },
+	{
+		name: {
+			type: String,
+			required: [true, 'Please add a name'],
+		},
+		email: {
+			type: String,
+			required: [true, 'Please add an email'],
+			unique: true,
+		},
+		password: {
+			type: String,
+			required: [true, 'Please add a name'],
+		},
+	},
+	{
+		timestamps: true, // Fixed typo from "timestamp" to "timestamps"
+	}
 );
 
-module.exports = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
+
+export default User;

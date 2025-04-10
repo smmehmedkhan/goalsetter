@@ -7,21 +7,87 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
+jspm_packages/
 
+# Build directories
+dist/
+dist-ssr/
+build/
+.cache/
+out/
+
+# Environment files
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Editor directories and files
-.vscode/*
+# Runtime files
+node-compile-cache/
+*.pid
+*.seed
+*.pid.lock
+
+# IDE and editor files
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.sw?
+
+# Debugging files
+debug.log
+stacktrace.log
+
+# Optional npm cache directory
+.npm/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Parcel-bundler cache
+.cache/
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# SvelteKit build output
+.svelte-kit/
+
+# Firebase build output
+.firebase/
+
+# VSCode workspace settings
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# ESLint cache
+.eslintcache
+
+# Prettier log files
+.prettiercache

@@ -1,0 +1,38 @@
+{
+	"name": "goalsetter",
+	"version": "1.0.0",
+	"author": "Mehmed Khan",
+	"description": "",
+	"keywords": [],
+	"license": "ISC",
+	"main": "app.js",
+	"type": "module",
+	"scripts": {
+		"dev": "nodemon app.js",
+		"start": "node app.js",
+		"build": "pnpm install",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"bcryptjs": "^3.0.2",
+		"colors": "^1.4.0",
+		"dotenv": "^16.4.7",
+		"express": "^5.1.0",
+		"express-async-handler": "^1.2.0",
+		"jsonwebtoken": "^9.0.2",
+		"mongodb": "^6.15.0",
+		"mongoose": "^8.13.2"
+	},
+	"devDependencies": {
+		"@eslint/css": "^0.6.0",
+		"@eslint/js": "^9.24.0",
+		"@eslint/json": "^0.11.0",
+		"@eslint/markdown": "^6.3.0",
+		"eslint": "^9.24.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-prettier": "^5.2.6",
+		"globals": "^16.0.0",
+		"nodemon": "^3.1.9",
+		"prettier": "^3.5.3"
+	}
+}
